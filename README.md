@@ -69,7 +69,17 @@ node app
 
 </b>
 
-It will print `Hello, World!` in the CLI.
+It will print `Hello, World!` in the CLI.  
+The command `console.log("data")` will not pront in the console of the browser.  
+Rather, it will print in the on you CLI.
+
+
+
+
+
+
+# Level 2: Functions:
+
 
 
 
