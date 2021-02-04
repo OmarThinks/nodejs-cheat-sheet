@@ -201,18 +201,82 @@ Hello, World!
 
 # Level 3: require and modules:
 
+Create a file and call it `functions.js`.  
+Put this code inside of it:
+
+<b>
+
 ```javascript
-function muliply(a,b)
+// In the functions file 
+function foo(){/*This function will be exported*/}
+module.exports={foo:foo}
+
+// In the app file
+var functions = require("./functions")
+var foo = functions.foo;
+// Now the variable has been imported
+```
+</b>
+
+Example:
+
+<b>
+
+```javascript
+// Return the addition of 2 inputs
+function adding(a,b)
+{return a+b;}
+
+// Return the multiplication of 2 inputs
+function multiplying(a,b)
+{return a*b;}
+
+password = "123"
+
+module.exports =
 {
-	return (a*b)
+	adding:adding,
+	multiplying:multiplying,
+	password:password
 }
+
+/*
+// Or we can say
+module.exports.adding = adding
+module.exports.multiplying = multiplying
+module.exports.password = password
+*/
+
 ```
 
+</b>
 
 
+Now create a file called `app.js`.  
+Put this code inside of it:
 
+<b>
 
+```javascript
+var functions = require("./functions")
 
+var adding = functions.adding;
+var multiplying = functions.multiplying;
+var password = functions.password;
+
+console.log(typeof(multiplying))
+
+console.log("____________________ 1) Using adding:")
+console.log(adding(5,6))
+
+console.log("____________________ 2) Using multiplying:")
+console.log(multiplying(5,6))
+
+console.log("____________________ 3) Using password:")
+console.log(password)
+```
+
+</b>
 
 
 
