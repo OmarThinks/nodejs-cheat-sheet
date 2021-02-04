@@ -89,7 +89,7 @@ function foo1(){/*1) Simple function*/}
 function foo2(input1){/*2) Function with parameters*/}
 var foo3 = function(input1){/*3) Function expression*/}
 var foo4 = (input1) => {/*4) Arrow function*/}
-var foo5 = (func) => { func() /*5) Passing functions*/}
+var foo5 = (func) => { func(); /*5) Passing functions*/}
 ```
 </b>
 
@@ -181,5 +181,49 @@ Hello again and again, Userrrr!
 ________________________________ 5) Function in a function
 Hello, World!
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Level 3: require and modules:
+
+```javascript
+function muliply(a,b)
+{
+	return (a*b)
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
