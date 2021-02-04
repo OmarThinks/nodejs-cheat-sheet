@@ -1,15 +1,27 @@
 /*
 This is the first way to create a function
 */
+console.log("________________________________ 1) Very simple function:")
 function hello1()
 {
 	console.log("Hello, World!");
 }
-console.log("________________________________ Function No. 1:")
 hello1();
 
 
 
+/*
+The second way to create a function:
+With paramaters:
+*/
+
+console.log("________________________________ 2) Function with paramters")
+function hello2(theName)
+{
+	console.log("Hello, "+theName+"!");
+}
+
+hello2("Mohammed");
 
 
 
