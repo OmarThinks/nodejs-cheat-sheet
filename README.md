@@ -80,10 +80,106 @@ Rather, it will print in the on you CLI.
 
 # Level 2: Functions:
 
+Summary:
+
+<b>
+
+```javascript
+function foo1(){/*1) Simple function*/}
+function foo2(input1){/*2) Function with parameters*/}
+var foo3 = function(input1){/*3) Function expression*/}
+var foo4 = (input1) => {/*4) Arrow function*/}
+var foo5 = (func) => { func() /*5) Passing functions*/}
+```
+</b>
+
+This is an example:
 
 
+<b>
+
+```javascript
+/*
+# 1
+Normal function
+*/
+console.log("________________________________ 1) Very simple function:")
+function hello1()
+{
+	console.log("Hello, World!");
+}
+hello1();
+// Hello, World!
 
 
+/*
+# 2:
+Function with paramaters:
+*/
+console.log("________________________________ 2) Function with paramters")
+function hello2(theName)
+{
+	console.log("Hello, "+theName+"!");
+}
+hello2("Mohammed");
+// Hello, Mohammed!
 
+
+/*
+# 3
+Function expression:
+*/
+console.log("________________________________ 3) Function expression")
+var hello3 = function(theName)
+{
+	console.log("Hello again, "+theName+"!");
+}
+hello3("User");
+// Hello again, User!
+
+
+/*
+# 4
+Arrow function:
+*/
+console.log("________________________________ 4) Arrow Function")
+var hello4 = (theName) => 
+{
+	console.log("Hello again and again, "+theName+"!");
+}
+hello4("Userrrr");
+// Hello again and again, Userrrr!
+
+
+/*
+# 5
+Function in a function:
+*/
+console.log("________________________________ 5) Function in a function")
+function innerFunction(func) 
+{
+	func();
+}
+innerFunction(hello1);
+// Hello, World!
+
+```
+
+</b>
+
+Result:
+
+```
+________________________________ 1) Very simple function:
+Hello, World!
+________________________________ 2) Function with paramters
+Hello, Mohammed!
+________________________________ 3) Function expression
+Hello again, User!
+________________________________ 4) Arrow Function
+Hello again and again, Userrrr!
+________________________________ 5) Function in a function
+Hello, World!
+```
 
 
