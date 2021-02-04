@@ -1,17 +1,36 @@
 # nodejs-cheat-sheet
  exploring Nodejs
 
+# Important Node Commands:
+
+<b>
+
+```bash
+# Level 1
+node -v
+node <file-name>
+```
+
+</b>
+
+
+
 
 
 # Level 1: Hello, World!
 
+```bash
+node -v
+node <file-name>
+
+```
 
 
 Run this command inside the **CLI**
 
 <b>
 
-```shell
+```bash
 node -v
 ```
 
