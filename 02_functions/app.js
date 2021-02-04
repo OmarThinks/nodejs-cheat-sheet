@@ -25,3 +25,23 @@ hello2("Mohammed");
 
 
 
+/*
+The third way to create a function:
+Function expression:
+*/
+
+
+console.log("________________________________ 3) Function expression")
+var hello3 = function(theName)
+{
+	console.log("Hello again, "+theName+"!");
+}
+
+hello3("User");
+
+
+
+
+
+
+
