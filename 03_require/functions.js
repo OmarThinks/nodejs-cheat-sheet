@@ -2,19 +2,22 @@
 function adding(a,b)
 {return a+b;}
 
-// Return the difference between 2 inputs
-function subtracting(a,b)
-{return a-b;}
-
 // Return the multiplication of 2 inputs
 function multiplying(a,b)
 {return a*b;}
 
-// Return the division of 2 inputs
-function dividing(a,b)
-{return a/b;}
+password = "123"
 
+module.exports =
+{
+	adding:adding,
+	multiplying:multiplying,
+	password:password
+}
+
+/*
+// Or we can say
 module.exports.adding = adding
-module.exports.subtracting = subtracting
 module.exports.multiplying = multiplying
-module.exports.dividing = dividing
+module.exports.password = password
+*/
