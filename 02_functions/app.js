@@ -42,6 +42,24 @@ hello3("User");
 
 
 
+/*
+The fourth way to create a function:
+Function expression:
+*/
+
+
+console.log("________________________________ 4) Arrow Function")
+var hello4 = (theName) => 
+{
+	console.log("Hello again and again, "+theName+"!");
+}
+
+
+hello4("Userrrr");
+
+
+
+
 
 
 
