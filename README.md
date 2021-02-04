@@ -35,6 +35,15 @@ Now, in the **CLI**, run this code:
 
 <b>
 
+```bash
+node <file-name>
+```
+
+</b>
+
+Like That:
+<b>
+
 ```shell
 node app
 ```
