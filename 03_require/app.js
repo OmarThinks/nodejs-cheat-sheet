@@ -1,8 +1,1 @@
-function multiply(a,b)
-{
-	return a*b;
-}
-
-
-
-module.exports.multiplier = multiply
+var mulitiply = require("./functions")
