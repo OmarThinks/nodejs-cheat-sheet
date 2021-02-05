@@ -16,6 +16,11 @@ npm install <packagename>  -save
 npm install express - save
 npm uninstall <packagename>
 npm uninstall express
+npm install
+
+# Level 5
+npm install nodemon -g
+nodemon <file name>
 ```
 
 </b>
@@ -305,7 +310,42 @@ npm uninstall express
 </b>
 
 
+This command:
 
+<b>
+
+```bash
+npm install
+```
+
+</b>
+
+Will install all the packages in the `package.json` file.
+
+
+
+
+
+
+
+
+
+
+# Level 5
+
+<b>
+
+```bash
+npm install nodemon -g
+nodemon <file name>
+```
+
+</b>
+
+
+This will install nodemon.  
+This will refresh all the files when running them, 
+if you make any changes to them.  
 
 
 

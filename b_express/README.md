@@ -9,6 +9,7 @@
 npm init
 npm install express - save
 npm uninstall express
+npm install
 ```
 </b>
 
@@ -34,7 +35,15 @@ npm uninstall express
 
 
 
+This command:
 
+<b>
 
+```bash
+npm install
+```
 
+</b>
+
+Will install all the packages in the `package.json` file.
 
