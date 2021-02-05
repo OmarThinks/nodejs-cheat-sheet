@@ -19,7 +19,7 @@ npm install
 
 
 
-# Level 1: Installing and uninstalling:
+## Level 1: Installing and uninstalling:
 
 
 
@@ -46,4 +46,40 @@ npm install
 </b>
 
 Will install all the packages in the `package.json` file.
+
+
+
+# Level2: minimal app
+
+Create a file called **`app0.js`**
+
+<b>
+
+```javascript
+var express = require("express")
+
+var app = express()
+
+app.get("/",function(req,res)
+{res.send("Hello, World!");})
+
+
+app.get("/page",function(req,res)
+{res.send("This is page");})
+
+app.listen(3000)
+```
+
+</b>
+
+
+In the CLI, run this command:
+
+<b>
+
+```bash
+nodemon app0
+```
+
+</b>
 
