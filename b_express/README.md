@@ -6,6 +6,7 @@
 <b>
 
 ```bash
+npm init
 npm install express - save
 npm uninstall express
 ```
@@ -25,6 +26,7 @@ npm uninstall express
 <b>
 
 ```bash
+npm init
 npm install express - save
 npm uninstall express
 ```

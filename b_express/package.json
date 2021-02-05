@@ -1,0 +1,17 @@
+{
+  "name": "b_express",
+  "version": "1.0.0",
+  "description": "Learing about Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Omar Magdy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

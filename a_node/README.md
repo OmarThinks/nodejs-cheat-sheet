@@ -11,6 +11,7 @@ node -v
 node <file-name>
 
 # Level 4
+npm init
 npm install <packagename>  -save
 npm install express - save
 npm uninstall <packagename>
@@ -292,13 +293,16 @@ console.log(password)
 
 # Level 4: Installing and unistalling packages:
 
+<b>
+
 ```bash
+npm init
 npm install <packagename>  -save
 npm install express - save
 
 npm uninstall express
 ```
-
+</b>
 
 
 
