@@ -9,6 +9,12 @@
 # Level 1
 node -v
 node <file-name>
+
+# Level 4
+npm install <packagename>  -save
+npm install express - save
+npm uninstall <packagename>
+npm uninstall express
 ```
 
 </b>
@@ -283,6 +289,15 @@ console.log(password)
 
 
 
+
+# Level 4: Installing and unistalling packages:
+
+```bash
+npm install <packagename>  -save
+npm install express - save
+
+npm uninstall express
+```
 
 
 
