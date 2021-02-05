@@ -1,18 +1,18 @@
 // Return the addition of 2 inputs
-function adding(a,b)
-{return a+b;}
+function adding( a , b )
+{return a + b;}
 
 // Return the multiplication of 2 inputs
-function multiplying(a,b)
-{return a*b;}
+function multiplying( a , b )
+{return a * b;}
 
 password = "123"
 
 module.exports =
 {
-	adding:adding,
-	multiplying:multiplying,
-	password:password
+	"adding" : adding ,
+	"multiplying" : multiplying ,
+	"password" : password
 }
 
 /*
