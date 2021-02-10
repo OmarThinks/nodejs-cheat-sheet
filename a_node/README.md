@@ -55,7 +55,6 @@ module.exports={foo:foo}
 var functions = require("./functions")
 var foo = functions.foo;
 // Now the variable has been imported
-
 ```
 
 </b>
@@ -160,7 +159,6 @@ function hello1()
 hello1();
 // Hello, World!
 
-
 /*
 # 2:
 Function with paramaters:
@@ -172,7 +170,6 @@ function hello2(theName)
 }
 hello2("Mohammed");
 // Hello, Mohammed!
-
 
 /*
 # 3
@@ -186,7 +183,6 @@ var hello3 = function(theName)
 hello3("User");
 // Hello again, User!
 
-
 /*
 # 4
 Arrow function:
@@ -198,7 +194,6 @@ var hello4 = (theName) =>
 }
 hello4("Userrrr");
 // Hello again and again, Userrrr!
-
 
 /*
 # 5
@@ -384,6 +379,18 @@ nodemon <file name>
 This will install nodemon.  
 This will refresh all the files when running them, 
 if you make any changes to them.  
+
+
+
+
+
+
+
+# Level 6: scripts
+
+In the 
+
+
 
 
 
