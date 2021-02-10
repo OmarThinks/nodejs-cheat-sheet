@@ -21,7 +21,7 @@ npm uninstall express
 npm install # To install all the packages in the package.json
 
 # Level 5
-npm install nodemon -g
+npm install nodemon --save-dev
 nodemon <file name>
 
 # Level 6: Scripts
@@ -379,7 +379,7 @@ Will install all the packages in the `package.json` file.
 <b>
 
 ```bash
-npm install nodemon -g
+npm install nodemon --save-dev
 nodemon <file name>
 ```
 
