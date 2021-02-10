@@ -38,6 +38,33 @@ app.listen(3000)
 </b>
 
 
+## Minimal app with CORS:
+
+<b>
+
+```javascript
+var express = require('express')
+var cors = require('cors')
+var app = express()
+
+var corsOptions = {
+  "origin": "*",
+  "methods": "GET,PUT,PATCH,POST,DELETE",
+  "allowedHeaders": ['Content-Type', 'Authorization']
+}
+
+app.use(cors(corsOptions))
+
+app.get("/",function(req,res)
+{res.send("Hello, World!");})
+
+app.listen(3000)
+```
+
+</b>
+
+
+
 
 
 ## Level 1: Installing and uninstalling:
@@ -120,16 +147,18 @@ nodemon app
 npm install cors --save
 ```
 
-</b>
-
-
-
 ```javascript
 var express = require('express')
 var cors = require('cors')
 var app = express()
 
-app.use(cors())
+var corsOptions = {
+  "origin": "*",
+  "methods": "GET,PUT,PATCH,POST,DELETE",
+  "allowedHeaders": ['Content-Type', 'Authorization']
+}
+
+app.use(cors(corsOptions))
 
 app.get("/",function(req,res)
 {res.send("Hello, World!");})
@@ -137,8 +166,45 @@ app.get("/",function(req,res)
 app.listen(3000)
 ```
 
+</b>
 
 
 
+
+
+
+
+
+
+
+
+
+## Level 4: Route parameters:
+
+
+```javascript
+var express = require('express')
+var cors = require('cors')
+var app = express()
+
+var corsOptions = {
+  "origin": "*",
+  "methods": "GET,PUT,PATCH,POST,DELETE",
+  "allowedHeaders": ['Content-Type', 'Authorization']
+}
+
+app.use(cors(corsOptions))
+
+app.get("/",function(req,res)
+{res.send("Hello, World!");})
+
+app.get("/products",function(req,res)
+{
+	//id = req.params.id;
+	res.send("Product id is")
+})
+
+app.listen(3000)
+```
 
 
