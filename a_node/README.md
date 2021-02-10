@@ -12,11 +12,13 @@ node <file-name>
 
 # Level 4
 npm init
-npm install <packagename>  -save
-npm install express - save
+npm install <packagename>  --save
+npm install <packagename>  --save-dev #To use package in dev not production
+npm install express --save
+
 npm uninstall <packagename>
 npm uninstall express
-npm install
+npm install # To install all the packages in the package.json
 
 # Level 5
 npm install nodemon -g
@@ -24,6 +26,41 @@ nodemon <file name>
 ```
 
 </b>
+
+
+
+
+
+# Important JavaScript Commands:
+
+<b>
+
+```javascript
+// Level 1: Hello. World!
+console.log("Hello, World!");
+
+// Level 2: Functions
+function foo1(){/*1) Simple function*/}
+function foo2(input1){/*2) Function with parameters*/}
+var foo3 = function(input1){/*3) Function expression*/}
+var foo4 = (input1) => {/*4) Arrow function*/}
+var foo5 = (func) => { func(); /*5) Passing functions*/}
+
+// Level 3: Export and require
+// In the functions file 
+function foo(){/*This function will be exported*/}
+module.exports={foo:foo}
+
+// In the app file
+var functions = require("./functions")
+var foo = functions.foo;
+// Now the variable has been imported
+
+```
+
+</b>
+
+
 
 
 
@@ -75,7 +112,7 @@ node <file-name>
 Like That:
 <b>
 
-```shell
+```bash
 node app
 ```
 
@@ -302,8 +339,9 @@ console.log(password)
 
 ```bash
 npm init
-npm install <packagename>  -save
-npm install express - save
+npm install <packagename>  --save
+npm install <packagename>  --save-dev #To use package in dev not production
+npm install express --save
 
 npm uninstall express
 ```

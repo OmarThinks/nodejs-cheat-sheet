@@ -6,10 +6,18 @@
 <b>
 
 ```bash
+# Level 1:
 npm init
 npm install express - save
 npm uninstall express
 npm install
+
+# Level 2:
+npm install nodemon -g
+
+
+npm install express - save
+
 ```
 </b>
 
@@ -82,4 +90,33 @@ nodemon app0
 ```
 
 </b>
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Level 2: Using Cors:
+
+<b>
+
+```bash
+npm install cors
+```
+
+</b>
+
+
+
+
+
+
+
 
