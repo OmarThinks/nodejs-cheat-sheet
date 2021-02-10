@@ -9,36 +9,15 @@
 # Level 1:
 npm init
 npm install express --save
+npm install cors --save
 npm uninstall express
 npm install
-
-
-
 ```
 </b>
 
 
 
 ## Javascripts commands:
-
-<b>
-
-```javascript
-// Level 2: minimal app
-var express = require("express")
-
-var app = express()
-
-app.get("/",function(req,res)
-{res.send("Hello, World!");})
-
-app.listen(3000)
-```
-
-</b>
-
-
-## Minimal app with CORS:
 
 <b>
 
@@ -58,10 +37,17 @@ app.use(cors(corsOptions))
 app.get("/",function(req,res)
 {res.send("Hello, World!");})
 
+app.get("/products/:id",function(req,res)
+{
+	id = req.params.id;
+	res.send("Product id is : " + id );
+})
+
 app.listen(3000)
 ```
 
 </b>
+
 
 
 
