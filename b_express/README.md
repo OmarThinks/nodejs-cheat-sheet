@@ -181,6 +181,7 @@ app.listen(3000)
 
 ## Level 4: Route parameters:
 
+<b>
 
 ```javascript
 var express = require('express')
@@ -198,13 +199,13 @@ app.use(cors(corsOptions))
 app.get("/",function(req,res)
 {res.send("Hello, World!");})
 
-app.get("/products",function(req,res)
+app.get("/products/:id",function(req,res)
 {
-	//id = req.params.id;
-	res.send("Product id is")
+	id = req.params.id;
+	res.send("Product id is : " + id );
 })
 
 app.listen(3000)
 ```
 
-
+</b>
