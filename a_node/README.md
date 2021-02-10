@@ -388,9 +388,30 @@ if you make any changes to them.
 
 # Level 6: scripts
 
-In the 
+In the `package.json` file.  
+You will find a key called `scripts`.  
+It's type is object.  
 
+You can fill it with scripts, and use these scripts later
 
+<b>
 
+```json
+"scripts": {
+    "start" : "node app" ,
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
+```
+</b>
+
+To run this script, in the command line, type
+
+<b>
+
+```bash
+npm run start
+```
+
+</b>
 
 
