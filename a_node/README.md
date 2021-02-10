@@ -23,6 +23,9 @@ npm install # To install all the packages in the package.json
 # Level 5
 npm install nodemon -g
 nodemon <file name>
+
+# Level 6: Scripts
+npm run start
 ```
 
 </b>
@@ -55,6 +58,13 @@ module.exports={foo:foo}
 var functions = require("./functions")
 var foo = functions.foo;
 // Now the variable has been imported
+
+// Level 6: Scripts:
+// in package.json
+"scripts": {
+    "start" : "node app" ,
+    "test": "echo \"Error: no test specified\" && exit 1"
+}
 ```
 
 </b>
@@ -400,7 +410,7 @@ You can fill it with scripts, and use these scripts later
 "scripts": {
     "start" : "node app" ,
     "test": "echo \"Error: no test specified\" && exit 1"
-},
+}
 ```
 </b>
 
