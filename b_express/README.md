@@ -95,7 +95,7 @@ In the CLI, run this command:
 <b>
 
 ```bash
-nodemon app0
+nodemon app
 ```
 
 </b>
@@ -112,17 +112,30 @@ nodemon app0
 
 
 
-## Level 2: Using Cors:
+## Level 3: Using Cors:
 
 <b>
 
 ```bash
-npm install cors
+npm install cors --save
 ```
 
 </b>
 
 
+
+```javascript
+var express = require('express')
+var cors = require('cors')
+var app = express()
+
+app.use(cors())
+
+app.get("/",function(req,res)
+{res.send("Hello, World!");})
+
+app.listen(3000)
+```
 
 
 

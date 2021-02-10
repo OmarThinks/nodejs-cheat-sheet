@@ -1,12 +1,16 @@
-var express = require("express")
-
+var express = require('express')
+var cors = require('cors')
 var app = express()
+
+var corsOptions = {
+  "origin": "*",
+  "methods": "GET,PUT,PATCH,POST,DELETE",
+  "allowedHeaders": ['Content-Type', 'Authorization']
+}
+
+app.use(cors(corsOptions))
 
 app.get("/",function(req,res)
 {res.send("Hello, World!");})
-
-
-app.get("/page",function(req,res)
-{res.send("This is page");})
 
 app.listen(3000)
