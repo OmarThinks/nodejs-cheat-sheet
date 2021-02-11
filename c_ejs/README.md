@@ -160,14 +160,24 @@ The id is :<br>
 
 ```html
 <%if (data.in_stock) { %>
-The product is in_stock
+The product is in stock
 <% } %>
 ```
 
 
 
 
+# level 5: looping through list:
 
+```html
+<ul>
+
+<% data.orders_id.forEach(function(item){ %>
+	<li> <%= item %> </li>
+<% }); %>
+
+</ul>
+```
 
 
 

@@ -3,6 +3,18 @@ The id is :<br>
 <%= id %>
 </p>
 
+<p>
 <%if (data.in_stock) { %>
 The product is in stock
 <% } %>
+</p>
+
+<h2>Orders: </h2>
+
+<ul>
+
+<% data.orders_id.forEach(function(item){ %>
+	<li> <%= item %> </li>
+<% }); %>
+
+</ul>
