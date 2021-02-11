@@ -20,7 +20,7 @@ app.get("/",function(req,res)
 		"in_stock": true,
 		"orders_id": [ 1 , 2 , 3 , 4 , 5 ]
 	}
-	res.render("example1", { "id" : id, data : data } );
+	res.render("index", { "id" : id, data : data } );
 })
 
 app.listen(3000)

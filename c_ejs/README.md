@@ -154,7 +154,15 @@ The id is :<br>
 
 
 
-# Level 4: 
+# Level 4: Conditionals:
+
+
+
+```html
+<%if (data.in_stock) { %>
+The product is in_stock
+<% } %>
+```
 
 
 
