@@ -109,13 +109,27 @@ app.listen(3000)
 
 # Level 3: passing data to the template:
 
+<b>
 
 ```javascript
-app.get("/example/:id",function(req,res)
-{res.render("example1", { "id" : req.params.id } ); })
+app.get("/data1/:id",function(req,res)
+{res.render("example1", { "id" : req.params.id } ) })
 ```
 
+</b>
 
+Now in `example1.ejs` file, we will fill it with this code:
+
+<b>
+
+```html
+<p>
+Th id is :<br>
+<%= id %>
+</p>
+```
+
+</b>
 
 
 

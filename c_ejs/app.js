@@ -15,4 +15,7 @@ app.set("view engine", "ejs");
 app.get("/",function(req,res)
 {res.render("index");})
 
+app.get("/data1/:id",function(req,res)
+{res.render("example1", { "id" : req.params.id } ) })
+
 app.listen(3000)
