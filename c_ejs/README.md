@@ -186,10 +186,31 @@ The product is in stock
 
 # Level 6: Partail views:
 
+<b>
+
+`partials/navbar.html`
 
 
+```html
+<ul>
+	<li> Contact us </li>
+	<li> about </li>
+</ul>
+```
+
+</b>
+
+Inside **`app.ejs`**
 
 
+<b>
+
+
+```javascript
+<% include partials/navbar.html %>
+```
+
+</b>
 
 
 
