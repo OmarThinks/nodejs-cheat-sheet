@@ -213,7 +213,7 @@ now in app.js add this endpoint:
 
 ```javascript
 app.get("/static",function(req,res)
-{res.sendFile(__dirname + "index.html");})
+{res.sendFile(__dirname + "/index.html");})
 ```
 
 </b>
