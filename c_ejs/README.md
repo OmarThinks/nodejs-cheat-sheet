@@ -112,8 +112,17 @@ app.listen(3000)
 <b>
 
 ```javascript
-app.get("/data1/:id",function(req,res)
-{res.render("example1", { "id" : req.params.id } ) })
+app.get("/",function(req,res)
+{
+	var id = 5;
+	data  = 
+	{
+		"name": "Labtop",
+		"in_stock": true,
+		"orders_id": [ 1 , 2 , 3 , 4 , 5 ]
+	}
+	res.render("index", { "id" : id, data : data } );
+})
 ```
 
 </b>
@@ -124,12 +133,38 @@ Now in `example1.ejs` file, we will fill it with this code:
 
 ```html
 <p>
-Th id is :<br>
+The id is :<br>
 <%= id %>
 </p>
 ```
 
 </b>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Level 4: 
+
+
+
+
+
+
+
+
+
+
 
 
 

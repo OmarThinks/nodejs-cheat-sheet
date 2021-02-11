@@ -11,11 +11,16 @@ var corsOptions = {
 app.use(cors(corsOptions));
 app.set("view engine", "ejs");
 
-
 app.get("/",function(req,res)
-{res.render("index");})
-
-app.get("/data1/:id",function(req,res)
-{res.render("example1", { "id" : req.params.id } ) })
+{
+	var id = 5;
+	data  = 
+	{
+		"name": "Labtop",
+		"in_stock": true,
+		"orders_id": [ 1 , 2 , 3 , 4 , 5 ]
+	}
+	res.render("example1", { "id" : id, data : data } );
+})
 
 app.listen(3000)
