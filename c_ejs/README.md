@@ -110,7 +110,10 @@ app.listen(3000)
 # Level 3: passing data to the template:
 
 
-
+```javascript
+app.get("/example/:id",function(req,res)
+{res.render("example1", { "id" : req.params.id } ); })
+```
 
 
 
