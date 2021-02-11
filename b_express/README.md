@@ -25,9 +25,9 @@ var cors = require('cors')
 var app = express()
 
 var corsOptions = {
-  "origin": "*",
-  "methods": "GET,PUT,PATCH,POST,DELETE",
-  "allowedHeaders": ['Content-Type', 'Authorization']
+    "origin": "*",
+    "methods": "GET,PUT,PATCH,POST,DELETE",
+    "allowedHeaders": ['Content-Type', 'Authorization']
 }
 
 app.use(cors(corsOptions))
@@ -37,9 +37,12 @@ app.get("/",function(req,res)
 
 app.get("/products/:id",function(req,res)
 {
-	id = req.params.id;
-	res.send("Product id is : " + id );
+    id = req.params.id;
+    res.send("Product id is : " + id );
 })
+
+app.get("/static",function(req,res)
+{res.sendFile(__dirname + "/index.html");})
 
 app.listen(3000)
 ```
