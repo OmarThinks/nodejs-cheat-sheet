@@ -46,7 +46,49 @@ npm install express --save
 
 
 
+# Level 2 : rendering:
 
+create a folder called `views`.  
+Create inside of it  file called **`index.ejs`**.
+fill it with this code:
+
+<b>
+
+```html
+<p>
+number <br>
+This is a template
+</p>
+```
+
+</b>
+
+In **`app.js`**:
+
+<b>
+
+```javascript
+var express = require('express')
+var cors = require('cors')
+var app = express()
+
+var corsOptions = {
+    "origin": "*",
+    "methods": "GET,PUT,PATCH,POST,DELETE",
+    "allowedHeaders": ['Content-Type', 'Authorization']
+}
+
+app.use(cors(corsOptions));
+app.set("view engine", "ejs");
+
+
+app.get("/",function(req,res)
+{res.render("index");})
+
+app.listen(3000)
+```
+
+</b>
 
 
 
