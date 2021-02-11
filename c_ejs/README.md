@@ -1,4 +1,4 @@
-# B) Express
+# C) EJS
 
 
 
@@ -7,9 +7,8 @@
 
 ```bash
 # Level 1:
-npm init
 npm install express --save
-npm install cors --save
+npm install ejs --save
 ```
 </b>
 

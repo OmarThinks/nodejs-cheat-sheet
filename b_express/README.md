@@ -63,7 +63,7 @@ app.listen(3000)
 
 ```bash
 npm init
-npm install express - save
+npm install express --save
 ```
 </b>
 
