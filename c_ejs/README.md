@@ -107,3 +107,19 @@ app.listen(3000)
 
 
 
+# Level 3: passing data to the template:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
