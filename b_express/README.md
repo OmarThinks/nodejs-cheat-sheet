@@ -179,3 +179,41 @@ app.listen(3000)
 ```
 
 </b>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Level 5: sending static file:
+
+Create a file called `index.html`.  
+Fill it with this code:
+
+```html
+<h1>
+Hi There
+</h1>
+<p>
+This is a static file
+</p>
+``` 
+
+now in app.js add this endpoint:
+
+<b>
+
+```javascript
+app.get("/static",function(req,res)
+{res.sendFile(__dirname + "index.html");})
+```
+
+</b>
