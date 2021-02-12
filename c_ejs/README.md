@@ -156,7 +156,7 @@ The id is :<br>
 
 # Level 4: Conditionals:
 
-
+<b>
 
 ```html
 <%if (data.in_stock) { %>
@@ -164,10 +164,12 @@ The product is in stock
 <% } %>
 ```
 
-
+</b>
 
 
 # level 5: looping through list:
+
+<b>
 
 ```html
 <ul>
@@ -179,7 +181,7 @@ The product is in stock
 </ul>
 ```
 
-
+</b>
 
 
 
