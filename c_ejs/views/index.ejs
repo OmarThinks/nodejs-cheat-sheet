@@ -1,18 +1,22 @@
 <!Doctype html>
 <html>
 <head>
-
+	
+	<!-- Level 7: using static files -->
 	<link href="/static/css/style.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
+
+
+<!-- Level 3 : passing data to templates -->
 <p>
 The id is :<br>
 <%= id %>
 </p>
 
 
-
+<!-- Level 4 : consitionals -->
 <p>
 <%if (data.in_stock) { %>
 The product is in stock
@@ -20,6 +24,8 @@ The product is in stock
 </p>
 
 <h2>Orders: </h2>
+
+<!-- Level 5 : looping through list : -->
 
 <ul>
 
@@ -30,12 +36,7 @@ The product is in stock
 </ul>
 
 
-
-
-
-
-
-
+<!-- Level 6 : Partial views -->
 <%- include("partials/navbar.ejs") %>
 </body>
 </html>
