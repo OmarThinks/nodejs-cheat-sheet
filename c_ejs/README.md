@@ -209,7 +209,7 @@ Inside **`app.ejs`**
 
 
 ```javascript
-<% include partials/navbar.html %>
+<%- include("partials/navbar.ejs") %>
 ```
 
 </b>
