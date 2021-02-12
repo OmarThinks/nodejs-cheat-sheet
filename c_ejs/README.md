@@ -15,20 +15,95 @@ npm install ejs --save
 
 
 
-## Javascripts commands:
+## Javascripts file:
 
 <b>
 
 ```javascript
+var express = require('express')
+var cors = require('cors')
+var app = express()
 
+var corsOptions = {
+    "origin": "*",
+    "methods": "GET,PUT,PATCH,POST,DELETE",
+    "allowedHeaders": ['Content-Type', 'Authorization']
+}
 
+app.use(cors(corsOptions));
+
+// Level2: Using EJS
+app.set("view engine", "ejs");
+
+app.get("/",function(req,res)
+{
+	var id = 5;
+	data  = 
+	{
+		"name": "Labtop",
+		"in_stock": true,
+		"orders_id": [ 1 , 2 , 3 , 4 , 5 ]
+	}
+	// Level 2 :rendering templates
+	// Level 3: Passing data to template
+	res.render("index", { "id" : id, data : data } );
+})
+
+app.listen(3000)
+
+// Level 7: Static files
+app.use("/static", express.static("static"));
 ```
 
 </b>
 
 
+## HTML Template: 
 
 
+<b>
+
+```html
+<!Doctype html>
+<html>
+<head>
+	<!-- Level 7: using static files -->
+	<link href="/static/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<!-- Level 3 : passing data to templates -->
+<p>
+The id is :<br>
+<%= id %>
+</p>
+
+<!-- Level 4 : consitionals -->
+<p>
+<%if (data.in_stock) { %>
+The product is in stock
+<% } %>
+</p>
+
+<h2>Orders: </h2>
+
+<!-- Level 5 : looping through list : -->
+
+<ul>
+
+<% data.orders_id.forEach(function(item){ %>
+	<li> <%= item %> </li>
+<% }); %>
+
+</ul>
+
+<!-- Level 6 : Partial views -->
+<%- include("partials/navbar.ejs") %>
+</body>
+</html>
+```
+
+</b>
 
 
 ## Level 1: Installing:
