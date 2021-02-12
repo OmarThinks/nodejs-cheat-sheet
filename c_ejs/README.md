@@ -219,10 +219,10 @@ Inside **`app.ejs`**
 
 # Level 7: static files:
 
-Create a CSS file **`assets/css/style.css`**: 
+Create a CSS file **`static/css/style.css`**: 
 
 ```CSS
-h1
+p
 { background-color : pink ; }
 ```
 
@@ -234,6 +234,18 @@ Now, in **`app.js`**:
 ```javascript
 app.use("/static", express.static("static"));
 ```	
+
+</b>
+
+
+
+In **`index.js`**:
+
+<b>
+	
+```javascript
+<link href="/static/css/style.css" rel="stylesheet" type="text/css">
+```
 
 </b>
 
