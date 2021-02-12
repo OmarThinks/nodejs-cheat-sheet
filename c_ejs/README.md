@@ -217,3 +217,26 @@ Inside **`app.ejs`**
 
 
 
+# Level 7: static files:
+
+Create a CSS file **`assets/css/style.css`**: 
+
+```CSS
+h1
+{ background-color : pink ; }
+```
+
+
+Now, in **`app.js`**:
+
+<b>
+
+```javascript
+app.use("/static", express.static("static"));
+```	
+
+</b>
+
+
+
+
